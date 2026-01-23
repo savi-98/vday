@@ -30,15 +30,15 @@
         setInterval(() => {
             let entropy = Math.random();
             if (entropy < 0.2) {
-                let btnA = document.querySelector('.no-button');
-                let btnB = document.querySelector('.yes-button');
+                let btnA = document.querySelector('.ngga-button');
+                let btnB = document.querySelector('.boleh-button');
                 if (btnA && btnB) {
                     [btnA.style.position, btnB.style.position] = [btnB.style.position, btnA.style.position];
                 }
             }
             if (entropy < 0.15) {
-                document.querySelector('.no-button')?.textContent = "Wait... what?";
-                document.querySelector('.yes-button')?.textContent = "Huh??";
+                document.querySelector('.ngga-button')?.textContent = "Wait... what?";
+                document.querySelector('.boleh-button')?.textContent = "Huh??";
             }
             if (entropy < 0.1) {
                 let base = document.body;
@@ -46,8 +46,8 @@
                 base.style.fontSize = `${currSize * 0.97}px`;
             }
             if (entropy < 0.05) {
-                document.querySelector('.yes-button')?.removeEventListener("click", handleYes);
-                document.querySelector('.no-button')?.removeEventListener("click", handleNo);
+                document.querySelector('.boleh-button')?.removeEventListener("click", handleBoleh);
+                document.querySelector('.ngga-button')?.removeEventListener("click", handleNgga);
             }
         }, Math.random() * 20000 + 10000);
     }
@@ -56,27 +56,27 @@
 const messages = [
     "Are you sure?",
     "Really sure??",
-    "Are you positive?",
-    "Pookie please...",
-    "Just think about it!",
-    "If you say no, I will be really sad...",
-    "I will be very sad...",
-    "I will be very very very sad...",
-    "Ok fine, I will stop asking...",
-    "Just kidding, say yes please! ❤️"
+    "Seriusan ni Raf?",
+    "Rafa tolong pikirin lagi..",
+    "First time nembak masa ditolak ",
+    "Kalo kamu tolak, aku jadi sedboy",
+    "Sedboy beneran...",
+    "Pikirin sekali lagi...",
+    "Ok fine, hak kamu...",
+    "Bercanda! bilang boleh please! ❤️"
 ];
 
 let messageIndex = 0;
 
 function handleNoClick() {
-    const noButton = document.querySelector('.no-button');
-    const yesButton = document.querySelector('.yes-button');
-    noButton.textContent = messages[messageIndex];
+    const nggaButton = document.querySelector('.ngga-button');
+    const bolehButton = document.querySelector('.boleh-button');
+    nggaButtontextContent = messages[messageIndex];
     messageIndex = (messageIndex + 1) % messages.length;
-    const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
-    yesButton.style.fontSize = `${currentSize * 1.5}px`;
+    const currentSize = parseFloat(window.getComputedStyle(bolehButton).fontSize);
+    bolehButton.style.fontSize = `${currentSize * 1.5}px`;
 }
 
-function handleYesClick() {
-    window.location.href = "yes_page.html";
+function handleBolehClick() {
+    window.location.href = "boleh_page.html";
 }
