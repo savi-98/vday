@@ -54,16 +54,18 @@
 })();
 */
 const messages = [
-    "Are you sure?",
-    "Really sure??",
-    "Are you positive?",
-    "Pookie please...",
-    "Just think about it!",
-    "If you say no, I will be really sad...",
-    "I will be very sad...",
-    "I will be very very very sad...",
-    "Ok fine, I will stop asking...",
-    "Just kidding, say yes please! ❤️"
+    "are you sure jisha??",
+    "really sure??",
+    "are you positive?",
+    "janimann please...",
+    "just think about it!",
+    "if you say no, i will be really sad...",
+    "i will be very sad...",
+    "i will be very very very sad...",
+    "u are not being very cutiepatootie",
+    "JANISHA YANGG!!! please hit yes😞"
+    "ok fine, I will stop asking...",
+    "jk, say yes please mi amor!♥️"
 ];
 
 let messageIndex = 0;
