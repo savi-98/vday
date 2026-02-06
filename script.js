@@ -63,7 +63,7 @@ const messages = [
     "i will be very sad...",
     "i will be very very very sad...",
     "u are not being very cutiepatootie",
-    "JANISHA YANGG!!! please hit yes😞"
+    "JANISHA YANGG!!! please hit yes😞",
     "ok fine, I will stop asking...",
     "jk, say yes please mi amor!♥️"
 ];
